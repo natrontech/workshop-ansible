@@ -17,16 +17,24 @@ nav:
   - Home: index.md
   - Ansible explained: 
     - explained/index.md
-    - Indempotency: explained/indempotency.md
     - Concepts: explained/concepts.md
     - Files: explained/files.md
-  - Testing Setup:
-    - test-setup/index.md
-    - Control Node Setup: test-setup/control-node.md
-  - Production Setup:
-    - prod-setup/index.md
-    - Control Node Setup: prod-setup/control-node.md
-    - Directory Structure: prod-setup/directory-structure.md
+    - Running Playbooks: explained/running-playbooks.md
+    - Indempotency: explained/indempotency.md
+  - Setup:
+    - setup/index.md
+    - Development:
+      - setup/dev/index.md
+      - Control Node Setup: setup/dev/control-node.md
+    - Production:
+      - setup/prod/index.md
+      - Control Node Setup: setup/prod/control-node.md
+      - Directory Structure: setup/prod/directory-structure.md
+  - Basics:
+    - basics/index.md
+    - Starting:
+      - Running your first task: basics/starting/first-task.md
+      - Creating an inventory: basics/starting/create-inventory.md
 
 # Configuration
 theme:

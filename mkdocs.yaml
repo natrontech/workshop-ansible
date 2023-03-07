@@ -19,6 +19,7 @@ nav:
     - explained/index.md
     - Indempotency: explained/indempotency.md
     - Concepts: explained/concepts.md
+    - Files: explained/files.md
   - Testing Setup:
     - test-setup/index.md
     - Control Node Setup: test-setup/control-node.md

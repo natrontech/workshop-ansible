@@ -1,27 +1,26 @@
-# Running your first ansible task
+# Running your first ansible tasks
 
 ## Creating a file
-Create a file called `create-file.yml` with the following content:
+This task will create a file called `note.txt` in the `/tmp` directory on your localhost.
 ```yaml title="create-file.yml"
-- name: "First task"
+- name: "First Play"
   hosts: localhost
   tasks:
     - name: "First task"
       command: touch /tmp/note.txt
 ```
 
-Run the playbook with the following command:
+The playbook will be run with the following command:
 ```bash
 ansible-playbook create-file.yml
 ```
 
-This will create a file called `note.txt` in the `/tmp` directory on your local host.
 This task uses the ```command``` module to run the ```touch``` command on the local host.
 
 ## Copying a file to a remote system
-Create a file called `copy-file.yml` with the following content:
+This task will copy the file from before to `/tmp/note2.txt`.
 ```yaml title="copy-file.yml"
-- name: "Second task"
+- name: "Second Play"
   hosts: localhost
   tasks:
     - name: "Second task"
@@ -30,15 +29,15 @@ Create a file called `copy-file.yml` with the following content:
         dest: /tmp/note2.txt
 ```
 
-Run the playbook with the following command:
+The playbook will be run with the following command:
 ```bash
 ansible-playbook copy-file.yml
 ```
 
-This will copy the `/tmp/note.txt` file to `/tmp/note2.txt` on the local host.
+This task uses the builtin ```copy``` module.
 
 ## Analysing the output
-The output of the second playbook run will look something like this:
+The output of the second playbook will look something like this:
 ``` hl_lines="7"
 PLAY [Second task] **************************************************************************************************
 
@@ -52,7 +51,7 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-If you run the second playbook again, the output will look like this:
+If we run the second playbook again, the output will look like this:
 ``` hl_lines="7"
 PLAY [Second task] **************************************************************************************************
 

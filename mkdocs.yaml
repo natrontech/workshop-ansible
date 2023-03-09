@@ -32,9 +32,29 @@ nav:
       - Directory Structure: setup/prod/directory-structure.md
   - Basics:
     - basics/index.md
-    - Starting:
-      - Running your first task: basics/starting/first-task.md
-      - Creating an inventory: basics/starting/create-inventory.md
+    - Inventory:
+      - Creating: basics/inventory/create-inventory.md
+      - Variables: basics/inventory/variables.md
+      - Magic Variables: basics/inventory/magic-vars.md
+      - Validating: basics/inventory/validate-inventory.md
+    - Tasks:
+      - Running your first tasks: basics/tasks/first-task.md
+      - Gather facts: basics/tasks/gather-facts.md
+      - Handlers: basics/tasks/handlers.md
+    - Modules:
+      - debug: basics/modules/debug.md
+      - template: basics/modules/template.md
+  - Advanced:
+    - advanced/index.md
+    - Linting:
+      - TODO Ansible lint: advanced/linting/ansible-lint.md
+    - CI/CD: 
+      - TODO Gitlab CI: advanced/ci-cd/gitlab-ci.md
+    - Various:
+      - TODO Global vars: advanced/various/global-vars.md
+      - TODO Loop unil when: advanced/various/loop-until-when.md
+  - Examples:
+    - examples/index.md
 
 # Configuration
 theme:

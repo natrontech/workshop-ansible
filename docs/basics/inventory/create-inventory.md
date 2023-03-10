@@ -1,6 +1,9 @@
 # Creating an ansible inventory
+The inventory is a file that contains a list of hosts, groups and optionally variables.
+The inventory file can be a YAML file or an INI file. This tutorial uses YAML format.
 
 ## Creating the inventory
+
 This is an example inventory file. It contains 3 hosts and 1 group. The group `webserver` contains only server2.
 ```yaml title="inventory.yml" hl_lines="2 4 8"
 all:
@@ -16,7 +19,7 @@ all:
         server2:
 ```
 
-Ansible always has a global group called `all` and there are 3 sub *groups*
+The inventory always has a global group called `all` and there are 3 sub *groups*
 
 - `hosts` a list of hosts
 - `vars` a list of variables

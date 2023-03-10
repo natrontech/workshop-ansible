@@ -5,7 +5,6 @@ Good examples for handlers are:
 
 - Restarting Nginx service after config change
 - Reboot after installing a new kernel
-- 
 
 ## Defining handlers
 Handlers can be in a separate file, if you use the production directory structure.
@@ -71,4 +70,37 @@ This will run all handlers that have been notified until that point.
       service:
         name: nginx
         state: restarted
+```
+
+## Running multiple handlers
+If you have multiple handlers, you can run them by using the `listen` keyword.
+This will group the handlers in a single notification called `restart web services`.
+```yaml hl_lines="4 11 17"
+tasks:
+  - name: Restart everything
+    command: echo "this task will restart the web services"
+    notify: "restart web services"
+
+handlers:
+  - name: Restart memcached
+    service:
+      name: memcached
+      state: restarted
+    listen: "restart web services"
+
+  - name: Restart apache
+    service:
+      name: apache
+      state: restarted
+    listen: "restart web services"
+```
+
+You can also notify multiple handlers in a single task.
+```yaml hl_lines="4 5 6"
+tasks:
+  - name: Restart everything
+    command: echo "this task will restart the web services"
+    notify: 
+    - "Restart memcached"
+    - "Restart apache"
 ```

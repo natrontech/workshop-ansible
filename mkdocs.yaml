@@ -21,6 +21,7 @@ nav:
     - Files: explained/files.md
     - Running Playbooks: explained/running-playbooks.md
     - Indempotency: explained/indempotency.md
+    - Docs: explained/docs.md
   - Setup:
     - setup/index.md
     - Development:
@@ -35,15 +36,19 @@ nav:
     - Inventory:
       - Creating: basics/inventory/create-inventory.md
       - Variables: basics/inventory/variables.md
-      - Magic Variables: basics/inventory/magic-vars.md
       - Validating: basics/inventory/validate-inventory.md
     - Tasks:
       - Running your first tasks: basics/tasks/first-task.md
       - Gather facts: basics/tasks/gather-facts.md
+      - Return: basics/tasks/return.md
       - Handlers: basics/tasks/handlers.md
+      - Recap: basics/tasks/recap.md
     - Modules:
       - debug: basics/modules/debug.md
       - template: basics/modules/template.md
+    - Jinja2:
+      - TODO Variables: basics/jinja/variables.md
+      - TODO Filter: basics/jinja/filter.md
   - Advanced:
     - advanced/index.md
     - Linting:
@@ -53,6 +58,7 @@ nav:
     - Various:
       - TODO Global vars: advanced/various/global-vars.md
       - TODO Loop unil when: advanced/various/loop-until-when.md
+      - TODO RC in Command indempotent: advanced/various/rc-in-command.md
   - Examples:
     - examples/index.md
 

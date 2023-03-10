@@ -61,6 +61,15 @@ nav:
       - TODO RC in Command indempotent: advanced/various/rc-in-command.md
   - Examples:
     - examples/index.md
+    - Cisco:
+      - ACL: examples/cisco/acl.md
+      - Interface: examples/cisco/interface.md
+    - Linux:
+      - DNS server: examples/linux/dns-server.md
+      - Users: examples/linux/users.md
+    - Windows:
+      - Domain Setup: examples/windows/domain-setup.md
+      - DNS record: examples/windows/dns-record.md
 
 # Configuration
 theme:

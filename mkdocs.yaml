@@ -58,6 +58,7 @@ nav:
       - TODO Ansible lint: advanced/linting/ansible-lint.md
     - CI/CD: 
       - TODO Gitlab CI: advanced/ci-cd/gitlab-ci.md
+      - TODO Ansible Runner: advanced/ci-cd/gitlab-ci.md
     - Various:
       - TODO Global vars: advanced/various/global-vars.md
       - TODO Loop unil when: advanced/various/loop-until-when.md

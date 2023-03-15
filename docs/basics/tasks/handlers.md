@@ -104,3 +104,6 @@ tasks:
     - "Restart memcached"
     - "Restart apache"
 ```
+
+## Reference
+[Ansible docs - handlers](https://docs.ansible.com/ansible/latest/user_guide/playbooks_handlers.html)

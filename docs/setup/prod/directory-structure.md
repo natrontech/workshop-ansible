@@ -40,7 +40,7 @@ dbservers.yml             # playbook for dbserver tier
 roles/
     common/               # this hierarchy represents a "role"
         tasks/            #
-            main.yml      #  <-- tasks file can include smaller files if warranted
+            main.yml      #  <-- tasks file can include smaller files if wanted
         handlers/         #
             main.yml      #  <-- handlers file
         templates/        #  <-- files for use with the template resource

@@ -90,7 +90,7 @@ This is an example for a hosts file template. It will be used to create a hosts 
 ## Advanced example
 You can expand the template module with a lot of features. This is an example for a nftables firewall template:
 
-!!! example "nftables-firewall.yml" 
+??? example "nftables-firewall.yml" 
     ```jinja
     table ip filter {
     set trusted {
@@ -137,3 +137,6 @@ You can expand the template module with a lot of features. This is an example fo
 
     }
     ```
+
+## Reference
+[Ansible docs - template module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html)

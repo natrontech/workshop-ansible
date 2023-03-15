@@ -31,6 +31,11 @@ nav:
       - setup/prod/index.md
       - Control Node Setup: setup/prod/control-node.md
       - Directory Structure: setup/prod/directory-structure.md
+    - Connecting to hosts:
+      - setup/connecting/index.md
+      - Linux: setup/connecting/linux.md
+      - Windows: setup/connecting/windows.md
+      - Network devices: setup/connecting/network-devices.md
   - Basics:
     - basics/index.md
     - Inventory:
@@ -43,20 +48,27 @@ nav:
       - Return: basics/tasks/return.md
       - Handlers: basics/tasks/handlers.md
       - Recap: basics/tasks/recap.md
-      - TODO tags: basics/tasks/tags.md
-      - TODO loop: basics/tasks/loop.md
-      - 
+      - Tags: basics/tasks/tags.md
+    - Control flow:
+      - TODO When: basics/control-flow/when.md
+      - TODO Loop: basics/control-flow/loop.md
+      - TODO Block: basics/control-flow/block.md
+      - TODO Import and include: basics/control-flow/import.md
+      - TODO Execution strategy: basics/control-flow/execution-strategy.md
+      - TODO referance all docs form ansible: asdasd
     - Modules:
       - debug: basics/modules/debug.md
       - template: basics/modules/template.md
     - Jinja2:
       - TODO Variables: basics/jinja/variables.md
       - TODO Filter: basics/jinja/filter.md
+    - Various:
+      - TODO Quoting: basics/various/quoting.md
   - Advanced:
     - advanced/index.md
     - Linting:
       - TODO Ansible lint: advanced/linting/ansible-lint.md
-    - CI/CD: 
+    - CI/CD:
       - TODO Gitlab CI: advanced/ci-cd/gitlab-ci.md
       - TODO Ansible Runner: advanced/ci-cd/gitlab-ci.md
     - Various:
@@ -71,6 +83,7 @@ nav:
     - Linux:
       - DNS server: examples/linux/dns-server.md
       - Users: examples/linux/users.md
+      - Update system: examples/linux/update-system.md
     - Windows:
       - Domain Setup: examples/windows/domain-setup.md
       - DNS record: examples/windows/dns-record.md

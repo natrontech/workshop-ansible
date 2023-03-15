@@ -48,7 +48,7 @@ ok: [localhost] => {
 ```
 
 It is recommended to disable facts gathering, if you don't need the facts.
-This imporoves the performance of the playbook massively.
+This improves the performance of the playbook massively.
 
 You can manually disable facts gathering with the `gather_facts` option:
 ```yaml hl_lines="3"

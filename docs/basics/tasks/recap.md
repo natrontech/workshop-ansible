@@ -40,3 +40,9 @@ This can be usefull if you for example want a task to never be marked as changed
   register: result
   changed_when: result.stdout == "hello"
 ```
+
+## Behaviour of a task on failure
+If a task fails, no other task will be executed on this host.
+All other hosts will continue to execute their tasks.
+
+You can change this behaviour by using the `ignore_errors` keyword.

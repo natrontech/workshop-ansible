@@ -60,3 +60,6 @@ You can manually disable facts gathering with the `gather_facts` option:
       debug: 
         var: ansible_facts
 ```
+
+## Reference
+[Ansible docs - gather_facts module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/gather_facts_module.html)

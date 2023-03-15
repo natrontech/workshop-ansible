@@ -49,19 +49,19 @@ nav:
       - Handlers: basics/tasks/handlers.md
       - Recap: basics/tasks/recap.md
       - Tags: basics/tasks/tags.md
+      - TODO Delegate: basics/tasks/delegate.md
     - Control flow:
       - Conditionals: basics/control-flow/contitionals.md
       - Loop: basics/control-flow/loop.md
       - Block: basics/control-flow/block.md
       - Import and include: basics/control-flow/import.md
-      - TODO Execution strategy: basics/control-flow/execution-strategy.md
-      - TODO referance all docs form ansible: asdasd
+      - Execution strategy: basics/control-flow/execution-strategy.md
     - Modules:
       - debug: basics/modules/debug.md
       - template: basics/modules/template.md
     - Jinja2:
-      - TODO Variables: basics/jinja/variables.md
-      - TODO Filter: basics/jinja/filter.md
+      - Variables: basics/jinja/variables.md
+      - Filter: basics/jinja/filter.md
     - Various:
       - TODO Quoting: basics/various/quoting.md
   - Advanced:

@@ -50,6 +50,7 @@ nav:
       - Recap: basics/tasks/recap.md
       - Tags: basics/tasks/tags.md
       - Delegate: basics/tasks/delegate.md
+      - TODO Check diff: basics/tasks/check-diff.md
     - Control flow:
       - Conditionals: basics/control-flow/contitionals.md
       - Loop: basics/control-flow/loop.md
@@ -71,9 +72,9 @@ nav:
       - TODO Ansible Runner: advanced/ci-cd/gitlab-ci.md
     - Various:
       - Quoting: advanced/various/quoting.md
-      - TODO Global vars: advanced/various/global-vars.md
-      - TODO Loop unil when: advanced/various/loop-until-when.md
-      - TODO RC in Command indempotent: advanced/various/rc-in-command.md
+      - Global vars: advanced/various/global-vars.md
+      - Loop until: advanced/various/loop-until.md
+      - TODO indempotency in command module: advanced/various/rc-in-command.md
       - TODO Combine when and loop items with filters: advanced/various/combine-when-loop.md
   - Examples:
     - examples/index.md

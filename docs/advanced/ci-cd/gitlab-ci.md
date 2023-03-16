@@ -44,7 +44,7 @@ diff infra:
   stage: diff_infra
   script:
     - echo $VAULT_PW > .vault-pass
-    - ansible-playbook ../../ansible/pb-hetzner-infra.yml --check --diff
+    - ansible-playbook ../../ansible/pb-infra.yml --check --diff
 
 deploy infra:
   tags:
@@ -52,6 +52,6 @@ deploy infra:
   stage: deploy_infra
   script:
     - echo $VAULT_PW > .vault-pass
-    - ansible-playbook ../../ansible/pb-hetzner-infra.yml
+    - ansible-playbook ../../ansible/pb-infra.yml
 ```
 This will first run a `diff` on your infrastructure and then deploy it. You can add more stages to your pipeline to run more tests or build your application.

@@ -50,7 +50,7 @@ nav:
       - Recap: basics/tasks/recap.md
       - Tags: basics/tasks/tags.md
       - Delegate: basics/tasks/delegate.md
-      - TODO Check diff: basics/tasks/check-diff.md
+      - Check diff: basics/tasks/check-diff.md
     - Control flow:
       - Conditionals: basics/control-flow/contitionals.md
       - Loop: basics/control-flow/loop.md
@@ -58,7 +58,7 @@ nav:
       - Import and include: basics/control-flow/import.md
       - Execution strategy: basics/control-flow/execution-strategy.md
     - Secrets:
-      - TODO Vault: basics/secrets/vault.md
+      - Vault: basics/secrets/vault.md
     - Modules:
       - debug: basics/modules/debug.md
       - template: basics/modules/template.md
@@ -72,7 +72,7 @@ nav:
       - Pre-commit hook: advanced/linting/precommit.md
     - CI/CD:
       - Gitlab: advanced/ci-cd/gitlab-ci.md
-      - TODO Ansible Runner: advanced/ci-cd/ansible-runner.md
+      - Ansible Runner: advanced/ci-cd/ansible-runner.md
     - Various:
       - Quoting: advanced/various/quoting.md
       - Global vars: advanced/various/global-vars.md

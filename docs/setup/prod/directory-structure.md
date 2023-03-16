@@ -5,7 +5,7 @@ Ansible is very flexible and you can structure your ansible project in many diff
     If you follow the recommended folder structure, you can reference files in your playbooks directly without having to include the full path:
     ```yaml
     roles:
-    - hetzner_infra
+    - vm_base
 
     ansible.builtin.include_tasks: 
       file: k8s-prereq.yml

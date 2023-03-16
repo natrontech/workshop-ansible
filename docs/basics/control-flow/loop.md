@@ -49,5 +49,18 @@ You can also loop over magic variables like `groups` or `hostvars`.
   loop: "{{ groups['all'] }}"
 ```
 
+## Control the output if loops
+Bt default Ansible will show all properties of the looped items in the output. You can control the console output of loops using the `loop_control` option.
+```yaml
+user:
+  name: "{{ item.username }}"
+  uid: "{{ item.uid }}"
+  home: "{{ item.home }}"
+  password: "{{ item.password | password_hash('sha512') }}"
+with_items: "{{ csv_users.list }}"
+loop_control:
+  label: "{{ item.username }}"
+```
+
 ## Reference
 [Ansible docs - Loops](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html)

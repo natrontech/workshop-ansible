@@ -74,7 +74,7 @@ nav:
       - Quoting: advanced/various/quoting.md
       - Global vars: advanced/various/global-vars.md
       - Loop until: advanced/various/loop-until.md
-      - TODO indempotency in command module: advanced/various/rc-in-command.md
+      - Indempotency in command module: advanced/various/rc-in-command.md
       - TODO Combine when and loop items with filters: advanced/various/combine-when-loop.md
   - Examples:
     - examples/index.md

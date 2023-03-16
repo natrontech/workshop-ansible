@@ -4,7 +4,7 @@ Indempotency is a property of operations that guarantees that the operation can 
 
 
 <figure markdown>
-  ![Indemportency](/assets/images/control.png){ width="300" }
+  ![Indemportency](../assets/images/control.png){ width="300" }
   [^1]
 </figure>
 

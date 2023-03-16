@@ -59,8 +59,8 @@ Variable               | Content |
 ------------           | ------------- | 
 `hostvars`   | A dictionary/map with all the hosts in inventory and variables assigned to them
 `group_names`           | List of groups the current host is part of  |
-`groups`                | A dictionary/map with all the groups in inventory and each group has the list of hosts that belong to it | 
-`inventory_hostname`       | The inventory name for the ‘current’ host being iterated over in the play   | 
+`groups`                | A dictionary/map with all the groups in inventory and each group has <br> the list of hosts that belong to it | 
+`inventory_hostname`       | The inventory name for the ‘current’ host being iterated <br> over in the play   | 
 
 Ansible Reference:
 [https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html#magic-variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html#magic-variables)

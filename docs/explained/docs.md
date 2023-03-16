@@ -15,7 +15,7 @@ Ansible modules are documented in the following chapters:
 |----------|-------------|
 | Synopsis |  Some general comments about the module and what it does |
 | Parameters |    All possible paramters that can be set   |
-| Examples | Some example files on how to use this module. **Watch out** sometimes the examples contain outdated parameters |
+| Examples | Some example files on how to use this module. **Watch out** sometimes <br> the examples contain outdated parameters |
 | Return Values | What the module returns when it is executed |
 | Authors | Who wrote the module |
 

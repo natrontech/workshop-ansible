@@ -12,5 +12,5 @@ Ansible is an binary that can be installed via pip or apt.
 All configration is done via the control node. The control node can be your own local client or a remote management server.
 
 <figure markdown>
-  ![Ansible Control Node](/assets/images/ansible_control_node.png){ width="800" }
+  ![Ansible Control Node](../../assets/images/ansible_control_node.png){ width="800" }
 </figure>

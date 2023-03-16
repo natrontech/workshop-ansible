@@ -28,7 +28,7 @@ ansible-playbook playbook.yml --check --diff
 
 This is an example of the output of a playbook that is run in check and diff mode with the template module:
 
-![Ansible Check Diff](/assets/images/ansible_check_diff.png){ width="800" }
+![Ansible Check Diff](../../assets/images/ansible_check_diff.png){ width="800" }
 
 ## Reference
 [Ansible check and diff mode](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_checkmode.html)

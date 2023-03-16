@@ -30,10 +30,10 @@ If you install the [Ansible extension for VSCode](https://marketplace.visualstud
 This only works if you have ansible-lint installed.
 
 The you need to make sure, that your yaml files are recognized as ansible files.
-![Ansible VSCode](/assets/images/ansible_vscode.png){ width="800" }
+![Ansible VSCode](../../assets/images/ansible_vscode.png){ width="800" }
 
 The ansible-lint will show you validation errors in real time:
-![Ansible VSCode](/assets/images/ansible_vscode2.png){ width="800" }
+![Ansible VSCode](../../assets/images/ansible_vscode2.png){ width="800" }
 
 ## Common ansible-lint errors
 | Name      | Description                          |

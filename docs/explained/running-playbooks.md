@@ -4,7 +4,7 @@ The control node can be a server or your local computer.
 Ansible will connect to the remote systems **directly from the control node**, therefore network connectivity from the control node to the remote systems is required.
 
 <figure markdown>
-  ![Ansible Control Node](/assets/images/ansible_architecture_diagram.png){ width="800" }
+  ![Ansible Control Node](../assets/images/ansible_architecture_diagram.png){ width="800" }
   [^1]
 </figure>
 

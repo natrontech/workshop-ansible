@@ -69,9 +69,10 @@ nav:
     - advanced/index.md
     - Linting:
       - Ansible Lint: advanced/linting/ansible-lint.md
+      - Pre-commit hook: advanced/linting/precommit.md
     - CI/CD:
-      - TODO Gitlab CI: advanced/ci-cd/gitlab-ci.md
-      - TODO Ansible Runner: advanced/ci-cd/gitlab-ci.md
+      - Gitlab: advanced/ci-cd/gitlab-ci.md
+      - TODO Ansible Runner: advanced/ci-cd/ansible-runner.md
     - Various:
       - Quoting: advanced/various/quoting.md
       - Global vars: advanced/various/global-vars.md

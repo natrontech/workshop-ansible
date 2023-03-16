@@ -57,6 +57,8 @@ nav:
       - Block: basics/control-flow/block.md
       - Import and include: basics/control-flow/import.md
       - Execution strategy: basics/control-flow/execution-strategy.md
+    - Secrets:
+      - TODO Vault: basics/secrets/vault.md
     - Modules:
       - debug: basics/modules/debug.md
       - template: basics/modules/template.md
@@ -66,16 +68,16 @@ nav:
   - Advanced:
     - advanced/index.md
     - Linting:
-      - TODO Ansible lint: advanced/linting/ansible-lint.md
+      - Ansible Lint: advanced/linting/ansible-lint.md
     - CI/CD:
       - TODO Gitlab CI: advanced/ci-cd/gitlab-ci.md
       - TODO Ansible Runner: advanced/ci-cd/gitlab-ci.md
     - Various:
       - Quoting: advanced/various/quoting.md
       - Global vars: advanced/various/global-vars.md
+      - Loop and when: advanced/various/combine-when-loop.md
       - Loop until: advanced/various/loop-until.md
       - Indempotency in command module: advanced/various/rc-in-command.md
-      - TODO Combine when and loop items with filters: advanced/various/combine-when-loop.md
   - Examples:
     - examples/index.md
     - Cisco:

@@ -1,0 +1,10 @@
+- name: Gather information and print
+  hosts: all
+  gather_facts: false
+  tasks:
+
+##Facts gathering
+
+
+
+## Templates

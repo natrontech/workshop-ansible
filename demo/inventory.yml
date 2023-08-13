@@ -10,3 +10,9 @@ all:
       ansible_host: 10.101.2.32
     server3:
       ansible_host: 10.101.2.33
+
+  children:
+    webserver:
+      hosts:
+        server1:
+        server2:

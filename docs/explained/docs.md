@@ -3,7 +3,7 @@
 You can find the full community documentation for Ansible [here](https://docs.ansible.com/ansible/latest/index.html).
 
 ## Module documentation
-All ansible core modules are documented [here](https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html).
+All ansible modules/collections are documented [here](https://docs.ansible.com/ansible/latest/collections/index_module.html).
 
 Example for the ansible copy module:
 [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html)

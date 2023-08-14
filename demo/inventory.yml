@@ -1,7 +1,23 @@
 all:
   vars:
-    ansible_user: demo
-    ansible_password: demo
+
+    ansible_user: "{{ vault_ansible_user }}"
+    ansible_password: "{{ vault_ansible_password }}"
+    ansible_become_pass: "{{ vault_ansible_become_pass }}"
+
+    customers:
+      - name: customer1
+        welcome: Welcome to customer1
+        port: 8001
+        color: red
+      - name: customer2
+        welcome: Welcome to customer2
+        port: 8002
+        color: blue
+      - name: customer1
+        welcome: Welcome to customer1
+        port: 8003
+        color: green
 
   hosts:
     server1:
@@ -16,3 +32,7 @@ all:
       hosts:
         server1:
         server2:
+    dbserver:
+      hosts:
+        server1:
+        server3:

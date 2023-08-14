@@ -1,0 +1,29 @@
+- name: VM Setup
+  hosts: server1
+  gather_facts: false
+  become: true
+  tasks:
+
+    # - name: Example Delegate Facts
+    #   shell:
+    #     cmd: cat /etc/hosts > hosts.config
+    #   delegate_to: localhost
+    #   delegate_facts: true
+    #   register: result_data
+    #   when: ansible_hostname == "webserver3"
+
+
+    # - name: Idempotency
+    #   shell:
+    #     cmd: echo "Hello World 123"
+    #   register: result_data
+    #   ignore_errors: true
+    #   changed_when: result_data.stdout != "Hello World"
+
+    - name: Wait until /tmp/test123 exists
+      stat:
+        path: /tmp/test123
+      register: result_data
+      retries: 100
+      until: result_data.stat.exists
+

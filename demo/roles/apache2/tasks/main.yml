@@ -1,0 +1,49 @@
+
+- name: install apache2
+  apt:
+    name: apache2
+    state: present
+  notify: restart apache2
+
+
+- name: template ports conf file
+  template:
+    src: ports.conf.j2
+    dest: /etc/apache2/ports.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart apache2
+  tags: ports
+
+- name: create directory for customer
+  file:
+    path: "/var/www/{{ item.hlq }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  with_items:
+    - "{{ customers }}"
+  tags: directories
+
+- name: Copy index.html file
+  template:
+    src: index.html.j2
+    dest: "/var/www/{{ item.hlq }}/index.html"
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - "{{ customers }}"
+
+- name: Template | create virtual host file
+  ansible.builtin.template:
+    src: mysite.conf.j2
+    dest: "/etc/apache2/sites-enabled/{{ item.hlq }}.conf"
+    owner: root
+    group: root
+    mode: "0644"
+  with_items:
+    - "{{ customers }}"
+  notify: reload apache2

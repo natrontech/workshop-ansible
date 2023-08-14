@@ -28,7 +28,8 @@
 - Ad-Hoc Commands (Ping, Setup, Shell)
 - Facts
 - Modules
-- Variables (Register)
+- Become
+- Variables (Register / Host vs Group Vars)
 - Check and Diff
 - Handlers
 - Loops

@@ -1,0 +1,15 @@
+<VirtualHost *:{{ item.port }}>
+        #ServerName www.example.com
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/{{ item.hlq }}
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        <Directory /var/www/{{ item.hlq }}>
+                Options Indexes FollowSymLinks MultiViews
+                Require all granted
+        </Directory>
+
+</VirtualHost>

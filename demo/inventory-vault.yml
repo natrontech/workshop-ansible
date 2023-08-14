@@ -1,0 +1,6 @@
+all:
+  vars:
+    vault_ansible_user: demo
+    vault_ansible_password: demo
+    vault_ansible_become_pass: demo
+    

@@ -1,0 +1,15 @@
+# This file is managed by Ansible. Do not edit directly.
+Listen {{ apache_port }}
+
+# Customer Ports configured by Ansible
+{% for customer in customers %}
+Listen {{ customer.port }}
+{% endfor %}
+
+<IfModule ssl_module>
+        Listen 443
+</IfModule>
+
+<IfModule mod_gnutls.c>
+        Listen 443
+</IfModule>

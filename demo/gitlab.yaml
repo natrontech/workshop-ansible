@@ -1,0 +1,15 @@
+- name: VM Setup
+  hosts: server2
+  gather_facts: false
+  become: true
+  tasks:
+
+  - name: Include Docker role
+    ansible.builtin.include_role:
+      name: docker
+    tags: compose
+
+  - name: Include Gitlab Docker role
+    ansible.builtin.include_role:
+      name: gitlab-docker
+    tags: compose

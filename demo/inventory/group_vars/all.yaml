@@ -1,3 +1,0 @@
-ansible_user: demo
-ansible_password: demo
-ansible_become_pass: demo

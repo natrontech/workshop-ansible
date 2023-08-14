@@ -1,0 +1,42 @@
+# Install prerequisites for docker
+- name: Install prerequisites 
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ apt_prerequisites }}"
+
+- name: Docker repo | Get GPG Key
+  ansible.builtin.copy:
+    src: docker.gpg
+    dest: /etc/apt/keyrings/docker.gpg
+
+- name: Docker repo | apt source
+  ansible.builtin.apt_repository:
+    repo: "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu   jammy stable"
+    state: present
+
+- name: Apt | Install docker
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ apt_docker }}"
+  notify: reboot
+
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers
+
+- name: create data directory
+  ansible.builtin.file:
+    path: /data
+    state: directory
+    mode: '0755'
+
+- name: copy docker-compose
+  ansible.builtin.template:
+    src: docker-compose.yml.j2
+    dest: /data/docker-compose.yml
+    mode: '0755'
+  notify: restart docker-compose
+  tags: compose

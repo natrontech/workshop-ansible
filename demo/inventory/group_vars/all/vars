@@ -1,0 +1,18 @@
+apache_port: 80
+customers:
+  - name: Customer 1 AG
+    hlq: cust1
+    welcome: Welcome to customer1
+    port: 8001
+    color: red
+    enabled: true
+  - name: Customer 2 GmbH
+    hlq: cust2
+    welcome: Welcome to customer2
+    port: 8002
+    color: blue
+  - name: Customer 3 Verein
+    hlq: cust3
+    welcome: Welcome to customer3
+    port: 8003
+    color: green

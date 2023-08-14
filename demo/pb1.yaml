@@ -1,0 +1,6 @@
+- name: Webserver Setup
+  hosts: server1:server2
+  gather_facts: false
+  become: true
+  roles:
+    - apache2

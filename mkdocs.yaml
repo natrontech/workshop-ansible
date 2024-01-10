@@ -1,8 +1,8 @@
 # Project information
 site_name: Ansible Workshop
-site_author: Natron Tech GmbH
+site_author: Natron Tech AG
 site_description: >-
-  Documentation and guides for the Ansible Workshop by Natron Tech GmbH.
+  Documentation and guides for the Ansible Workshop by Natron Tech AG.
 
 # Repository
 repo_url: https://github.com/natrontech/workshop-ansible
@@ -10,7 +10,7 @@ repo_name: natrontech/workshop-ansible
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2023 Natron Tech GmbH
+copyright: Copyright &copy; 2024 Natron Tech AG
 
 # Page tree
 nav:
